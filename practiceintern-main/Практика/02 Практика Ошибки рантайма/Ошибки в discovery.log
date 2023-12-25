@@ -1,0 +1,740 @@
+VM settings:
+    Min. Heap Size: 512.00M
+    Max. Heap Size: 1.00G
+    Using VM: OpenJDK 64-Bit Server VM
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.7)
+
+2023-07-26 10:22:28.173  INFO 1 --- [           main] r.i.p.PlanetaDiscoveryServiceApplication : Starting PlanetaDiscoveryServiceApplication v2.4.0 using Java 17-ea on planeta-discovery-0 with PID 1 (/app/planeta-discovery-service.jar started by root in /app)
+2023-07-26 10:22:28.179  INFO 1 --- [           main] r.i.p.PlanetaDiscoveryServiceApplication : The following 1 profile is active: "default"
+2023-07-26 10:22:28.322  INFO 1 --- [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://planeta-config.rzd-planeta.svc.cluster.local:55880
+2023-07-26 10:22:28.323  INFO 1 --- [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=discovery-service, profiles=[default], label=null, version=null, state=null
+2023-07-26 10:22:31.106  INFO 1 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=99f4469b-63fc-30cd-965b-ed9963f97bc0
+2023-07-26 10:22:31.285  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-26 10:22:31.287  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-26 10:22:31.292  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-26 10:22:31.982  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2023-07-26 10:22:31.998  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-26 10:22:31.999  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-07-26 10:22:32.144  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-26 10:22:32.144  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3819 ms
+2023-07-26 10:22:33.581  INFO 1 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2023-07-26 10:22:33.856  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2023-07-26 10:22:33.858  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2023-07-26 10:22:34.108  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2023-07-26 10:22:34.108  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2023-07-26 10:22:36.058  INFO 1 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2023-07-26 10:22:36.837  WARN 1 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-07-26 10:22:36.865  INFO 1 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-07-26 10:22:36.979  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-07-26 10:22:37.173  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2023-07-26 10:22:37.174  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2023-07-26 10:22:37.174  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2023-07-26 10:22:37.174  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2023-07-26 10:22:37.434  INFO 1 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 10:22:37.486  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-07-26 10:22:37.487  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-07-26 10:22:37.487  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-07-26 10:22:37.487  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-07-26 10:22:37.487  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-07-26 10:22:37.487  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-07-26 10:22:37.487  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-07-26 10:22:37.733  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-07-26 10:22:37.739  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Not registering with Eureka server per configuration
+2023-07-26 10:22:37.747  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1690366957745 with initial instances count: 14
+2023-07-26 10:22:37.837  INFO 1 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2023-07-26 10:22:37.840  INFO 1 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://planeta-discovery-1.planeta-discovery.rzd-planeta.svc.cluster.local:8761/eureka/]
+2023-07-26 10:22:37.846  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2023-07-26 10:22:37.846  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2023-07-26 10:22:37.848  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2023-07-26 10:22:37.848  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2023-07-26 10:22:38.061  INFO 1 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://planeta-discovery-1.planeta-discovery.rzd-planeta.svc.cluster.local:8761/eureka/
+2023-07-26 10:22:38.073  INFO 1 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2023-07-26 10:22:38.074  INFO 1 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2023-07-26 10:22:38.095  INFO 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-07-26 10:22:38.154  INFO 1 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVICE with eureka with status DOWN
+2023-07-26 10:22:38.765  INFO 1 --- [      Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2023-07-26 10:22:38.766  INFO 1 --- [      Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2023-07-26 10:22:38.766  INFO 1 --- [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2023-07-26 10:22:38.766  INFO 1 --- [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2023-07-26 10:22:38.767  INFO 1 --- [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2023-07-26 10:22:38.770  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2023-07-26 10:22:38.771  INFO 1 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2023-07-26 10:22:38.776  INFO 1 --- [      Thread-12] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2023-07-26 10:22:38.826  INFO 1 --- [           main] r.i.p.PlanetaDiscoveryServiceApplication : Started PlanetaDiscoveryServiceApplication in 12.482 seconds (JVM running for 13.749)
+2023-07-26 10:22:39.061  INFO 1 --- [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-26 10:22:39.061  INFO 1 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-26 10:22:39.066  INFO 1 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-07-26 10:22:39.118  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: DATA-SERVICE - data-service-a1d6f99b-8760-4794-9f4b-1f1a122ebbb6
+2023-07-26 10:22:39.119  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): DATA-SERVICE - data-service-a1d6f99b-8760-4794-9f4b-1f1a122ebbb6
+2023-07-26 10:22:39.126  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SCREEN-SERVICE - screen-service-5c0544fb-1b11-4350-a47a-d6f1f18dab4e
+2023-07-26 10:22:39.126  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SCREEN-SERVICE - screen-service-5c0544fb-1b11-4350-a47a-d6f1f18dab4e
+2023-07-26 10:22:39.127  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: MIGRATION-SERVICE - migration-service-0635227f-c5c2-48de-b1d7-377c273ba25b
+2023-07-26 10:22:39.127  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): MIGRATION-SERVICE - migration-service-0635227f-c5c2-48de-b1d7-377c273ba25b
+2023-07-26 10:22:39.127  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: MIGRATION-SERVICE - migration-service-6589231e-42d0-4c0d-ae5c-0c979ad522d5
+2023-07-26 10:22:39.127  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): MIGRATION-SERVICE - migration-service-6589231e-42d0-4c0d-ae5c-0c979ad522d5
+2023-07-26 10:22:39.128  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CONTENT-SERVICE - content-service-a944212f-8c57-4446-9ca3-c3f1372a426b
+2023-07-26 10:22:39.128  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CONTENT-SERVICE - content-service-a944212f-8c57-4446-9ca3-c3f1372a426b
+2023-07-26 10:22:39.128  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CONTENT-SERVICE - content-service-75f83bbc-1faa-49cf-a767-c294c6cfb9ec
+2023-07-26 10:22:39.128  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CONTENT-SERVICE - content-service-75f83bbc-1faa-49cf-a767-c294c6cfb9ec
+2023-07-26 10:22:39.128  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CONVERT-SERVICE - convert-service-b6c4ed22-8e84-4298-bde4-90f21caadab9
+2023-07-26 10:22:39.128  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CONVERT-SERVICE - convert-service-b6c4ed22-8e84-4298-bde4-90f21caadab9
+2023-07-26 10:22:39.128  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: REPORT-SERVICE - report-service-000de0e3-2b90-4002-a5e6-b9e1753160ed
+2023-07-26 10:22:39.128  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): REPORT-SERVICE - report-service-000de0e3-2b90-4002-a5e6-b9e1753160ed
+2023-07-26 10:22:39.128  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - api-gateway-6d01fb10-e391-4fde-b072-49336aa9a011
+2023-07-26 10:22:39.128  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - api-gateway-6d01fb10-e391-4fde-b072-49336aa9a011
+2023-07-26 10:22:39.129  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: REPORT-SERVICE - report-service-217d5e46-c7d5-4ae2-be44-4849c0148edb
+2023-07-26 10:22:39.129  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): REPORT-SERVICE - report-service-217d5e46-c7d5-4ae2-be44-4849c0148edb
+2023-07-26 10:22:39.129  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SCREEN-SERVICE - screen-service-92893a34-861f-4360-af82-84b626aa36b7
+2023-07-26 10:22:39.129  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SCREEN-SERVICE - screen-service-92893a34-861f-4360-af82-84b626aa36b7
+2023-07-26 10:22:39.129  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - api-gateway-8d673289-6384-452c-aa70-8317639247cd
+2023-07-26 10:22:39.129  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - api-gateway-8d673289-6384-452c-aa70-8317639247cd
+2023-07-26 10:22:39.129  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CONVERT-SERVICE - convert-service-ac1ebb38-3773-4505-9c8c-890300595c5e
+2023-07-26 10:22:39.129  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CONVERT-SERVICE - convert-service-ac1ebb38-3773-4505-9c8c-890300595c5e
+2023-07-26 10:22:39.135  INFO 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway-8d673289-6384-452c-aa70-8317639247cd with status UP (replication=true)
+2023-07-26 10:22:39.136  INFO 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway-6d01fb10-e391-4fde-b072-49336aa9a011 with status UP (replication=true)
+2023-07-26 10:22:39.136  WARN 1 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: LOG-SERVICE - log-service-88e594f7-eace-4c38-ad2b-e3b2a048fd66
+2023-07-26 10:22:39.136  WARN 1 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): LOG-SERVICE - log-service-88e594f7-eace-4c38-ad2b-e3b2a048fd66
+2023-07-26 10:22:40.052  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: DATA-SERVICE - data-service-a1d6f99b-8760-4794-9f4b-1f1a122ebbb6
+2023-07-26 10:22:40.052  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): DATA-SERVICE - data-service-a1d6f99b-8760-4794-9f4b-1f1a122ebbb6
+2023-07-26 10:22:40.052  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SCREEN-SERVICE - screen-service-5c0544fb-1b11-4350-a47a-d6f1f18dab4e
+2023-07-26 10:22:40.053  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SCREEN-SERVICE - screen-service-5c0544fb-1b11-4350-a47a-d6f1f18dab4e
+2023-07-26 10:22:40.053  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: MIGRATION-SERVICE - migration-service-0635227f-c5c2-48de-b1d7-377c273ba25b
+2023-07-26 10:22:40.053  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): MIGRATION-SERVICE - migration-service-0635227f-c5c2-48de-b1d7-377c273ba25b
+2023-07-26 10:22:40.053  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: MIGRATION-SERVICE - migration-service-6589231e-42d0-4c0d-ae5c-0c979ad522d5
+2023-07-26 10:22:40.053  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): MIGRATION-SERVICE - migration-service-6589231e-42d0-4c0d-ae5c-0c979ad522d5
+2023-07-26 10:22:40.054  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CONTENT-SERVICE - content-service-a944212f-8c57-4446-9ca3-c3f1372a426b
+2023-07-26 10:22:40.054  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CONTENT-SERVICE - content-service-a944212f-8c57-4446-9ca3-c3f1372a426b
+2023-07-26 10:22:40.054  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CONTENT-SERVICE - content-service-75f83bbc-1faa-49cf-a767-c294c6cfb9ec
+2023-07-26 10:22:40.054  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CONTENT-SERVICE - content-service-75f83bbc-1faa-49cf-a767-c294c6cfb9ec
+2023-07-26 10:22:40.054  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CONVERT-SERVICE - convert-service-b6c4ed22-8e84-4298-bde4-90f21caadab9
+2023-07-26 10:22:40.054  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CONVERT-SERVICE - convert-service-b6c4ed22-8e84-4298-bde4-90f21caadab9
+2023-07-26 10:22:40.054  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: REPORT-SERVICE - report-service-000de0e3-2b90-4002-a5e6-b9e1753160ed
+2023-07-26 10:22:40.054  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): REPORT-SERVICE - report-service-000de0e3-2b90-4002-a5e6-b9e1753160ed
+2023-07-26 10:22:40.056  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: REPORT-SERVICE - report-service-217d5e46-c7d5-4ae2-be44-4849c0148edb
+2023-07-26 10:22:40.056  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): REPORT-SERVICE - report-service-217d5e46-c7d5-4ae2-be44-4849c0148edb
+2023-07-26 10:22:40.056  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SCREEN-SERVICE - screen-service-92893a34-861f-4360-af82-84b626aa36b7
+2023-07-26 10:22:40.056  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SCREEN-SERVICE - screen-service-92893a34-861f-4360-af82-84b626aa36b7
+2023-07-26 10:22:40.057  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CONVERT-SERVICE - convert-service-ac1ebb38-3773-4505-9c8c-890300595c5e
+2023-07-26 10:22:40.057  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CONVERT-SERVICE - convert-service-ac1ebb38-3773-4505-9c8c-890300595c5e
+2023-07-26 10:22:40.058  INFO 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway-8d673289-6384-452c-aa70-8317639247cd with status UP (replication=true)
+2023-07-26 10:22:40.058  INFO 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway-6d01fb10-e391-4fde-b072-49336aa9a011 with status UP (replication=true)
+2023-07-26 10:22:40.058  WARN 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: LOG-SERVICE - log-service-88e594f7-eace-4c38-ad2b-e3b2a048fd66
+2023-07-26 10:22:40.058  WARN 1 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): LOG-SERVICE - log-service-88e594f7-eace-4c38-ad2b-e3b2a048fd66
+2023-07-26 10:22:40.595  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DATA-SERVICE/data-service-a1d6f99b-8760-4794-9f4b-1f1a122ebbb6 with status UP (replication=true)
+2023-07-26 10:22:40.596  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SCREEN-SERVICE/screen-service-5c0544fb-1b11-4350-a47a-d6f1f18dab4e with status UP (replication=true)
+2023-07-26 10:22:40.596  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MIGRATION-SERVICE/migration-service-0635227f-c5c2-48de-b1d7-377c273ba25b with status UP (replication=true)
+2023-07-26 10:22:40.597  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MIGRATION-SERVICE/migration-service-6589231e-42d0-4c0d-ae5c-0c979ad522d5 with status UP (replication=true)
+2023-07-26 10:22:40.598  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONTENT-SERVICE/content-service-a944212f-8c57-4446-9ca3-c3f1372a426b with status UP (replication=true)
+2023-07-26 10:22:40.598  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONTENT-SERVICE/content-service-75f83bbc-1faa-49cf-a767-c294c6cfb9ec with status UP (replication=true)
+2023-07-26 10:22:40.600  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONVERT-SERVICE/convert-service-b6c4ed22-8e84-4298-bde4-90f21caadab9 with status UP (replication=true)
+2023-07-26 10:22:40.600  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance REPORT-SERVICE/report-service-000de0e3-2b90-4002-a5e6-b9e1753160ed with status UP (replication=true)
+2023-07-26 10:22:40.601  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance REPORT-SERVICE/report-service-217d5e46-c7d5-4ae2-be44-4849c0148edb with status UP (replication=true)
+2023-07-26 10:22:40.602  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SCREEN-SERVICE/screen-service-92893a34-861f-4360-af82-84b626aa36b7 with status UP (replication=true)
+2023-07-26 10:22:40.602  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONVERT-SERVICE/convert-service-ac1ebb38-3773-4505-9c8c-890300595c5e with status UP (replication=true)
+2023-07-26 10:22:40.603  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LOG-SERVICE/log-service-88e594f7-eace-4c38-ad2b-e3b2a048fd66 with status UP (replication=true)
+2023-07-26 10:22:55.500  INFO 1 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NSI-SERVICE/nsi-service-f931d323-7b16-4f53-84ef-59c6a3d79e7e with status DOWN (replication=true)
+2023-07-26 10:23:26.819  INFO 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DATA-SERVICE/data-service-e8f0c3bc-4792-4a7f-a0bf-fda00249cd22 with status DOWN (replication=false)
+2023-07-26 10:23:38.768  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:23:56.840  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DATA-SERVICE/data-service-e8f0c3bc-4792-4a7f-a0bf-fda00249cd22 with status UP (replication=false)
+2023-07-26 10:24:38.768  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:25:38.768  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:26:38.769  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:27:37.491  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 10:27:38.768  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:28:38.768  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:29:38.769  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:30:38.769  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:31:38.769  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:32:37.492  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 10:32:38.769  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:33:13.068  INFO 1 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LOG-SERVICE/log-service-f659f2d9-4f9c-4abe-8671-62b2cbe0e394 with status DOWN (replication=true)
+2023-07-26 10:33:38.769  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:33:43.115  INFO 1 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance LOG-SERVICE/log-service-f659f2d9-4f9c-4abe-8671-62b2cbe0e394 with status UP (replication=true)
+2023-07-26 10:34:38.769  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:35:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:36:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:37:37.493  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 10:37:38.078  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 27
+2023-07-26 10:37:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:38:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:39:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:40:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:41:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:42:37.494  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 10:42:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:43:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:44:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:45:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:46:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:47:37.494  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 10:47:38.771  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:48:25.139  INFO 1 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NSI-SERVICE/nsi-service-f931d323-7b16-4f53-84ef-59c6a3d79e7e with status UP (replication=false)
+2023-07-26 10:48:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:49:38.771  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:50:38.770  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:51:38.771  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:52:37.495  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 10:52:38.073  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 28
+2023-07-26 10:52:38.771  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:53:38.771  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:54:38.772  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:55:38.771  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:56:38.772  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:57:18.208  INFO 1 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway-6d01fb10-e391-4fde-b072-49336aa9a011 with status DOWN (replication=false)
+2023-07-26 10:57:18.663  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway-8d673289-6384-452c-aa70-8317639247cd with status DOWN (replication=true)
+2023-07-26 10:57:23.389  INFO 1 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/api-gateway-6d01fb10-e391-4fde-b072-49336aa9a011 (replication=false)
+2023-07-26 10:57:24.187  INFO 1 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/api-gateway-8d673289-6384-452c-aa70-8317639247cd (replication=true)
+2023-07-26 10:57:30.342  INFO 1 --- [freshExecutor-0] d.c.b.a.s.c.d.InstanceDiscoveryListener  : Instance '810a9b5cefd2' missing in DiscoveryClient services and will be removed.
+2023-07-26 10:57:30.343  INFO 1 --- [freshExecutor-0] d.c.b.a.s.c.d.InstanceDiscoveryListener  : Instance '92a3472d3f17' missing in DiscoveryClient services and will be removed.
+2023-07-26 10:57:37.496  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 10:57:38.772  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:57:39.216  INFO 1 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NSI-SERVICE/nsi-service-f931d323-7b16-4f53-84ef-59c6a3d79e7e with status DOWN (replication=false)
+2023-07-26 10:57:42.296  INFO 1 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance NSI-SERVICE/nsi-service-f931d323-7b16-4f53-84ef-59c6a3d79e7e (replication=false)
+2023-07-26 10:57:56.047  INFO 1 --- [     parallel-1] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=166ec41df984, version=4, registration=Registration(name=NSI-SERVICE, managementUrl=http://10.111.6.129:8088/actuator, healthUrl=http://10.111.6.129:8088/actuator/health, serviceUrl=http://10.111.6.129:8088, source=discovery), registered=true, statusInfo=StatusInfo(status=UP, details={healthIndicatorConfig={status=UP}, diskSpace={status=UP, details={total=75570872320, free=32527077376, threshold=10485760, exists=true}}, ping={status=UP}, discoveryComposite={status=UP, details={discoveryClient={status=UP, details={services=[content-service, convert-service, log-service, api-gateway, screen-service, migration-service, nsi-service, data-service, report-service]}}, eureka={description=Remote status from Eureka server, status=UP, details={applications={CONTENT-SERVICE=2, CONVERT-SERVICE=2, LOG-SERVICE=2, API-GATEWAY=2, SCREEN-SERVICE=2, MIGRATION-SERVICE=2, NSI-SERVICE=1, DATA-SERVICE=2, REPORT-SERVICE=2}}}}}, refreshScope={status=UP}, livenessState={status=UP}, dataSource={status=UP, details={database=PostgreSQL, validationQuery=isValid()}}, readinessState={status=UP}, db={status=UP, details={database=PostgreSQL, validationQuery=isValid()}}}), statusTimestamp=2023-07-26T10:49:06.042967565Z, info=Info(values={git={}, build={artifact=web, name=web, time=2023-07-24T14:08:06.896Z, version=2.7.13, group=ru.ibs.nsi}}), endpoints=Endpoints(endpoints={caches=Endpoint(id=caches, url=http://10.111.6.129:8088/actuator/caches), health=Endpoint(id=health, url=http://10.111.6.129:8088/actuator/health), prometheus=Endpoint(id=prometheus, url=http://10.111.6.129:8088/actuator/prometheus), metrics=Endpoint(id=metrics, url=http://10.111.6.129:8088/actuator/metrics), info=Endpoint(id=info, url=http://10.111.6.129:8088/actuator/info)}), buildVersion=2.7.13, tags=Tags(values={}))
+
+java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 10000ms in 'map' (and no fallback has been configured)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295) ~[reactor-core-3.4.17.jar!/:3.4.17]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to GET health [DefaultWebClient]
+Original Stack Trace:
+		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295) ~[reactor-core-3.4.17.jar!/:3.4.17]
+		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280) ~[reactor-core-3.4.17.jar!/:3.4.17]
+		at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419) ~[reactor-core-3.4.17.jar!/:3.4.17]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.4.17.jar!/:3.4.17]
+		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271) ~[reactor-core-3.4.17.jar!/:3.4.17]
+		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286) ~[reactor-core-3.4.17.jar!/:3.4.17]
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.4.17.jar!/:3.4.17]
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.4.17.jar!/:3.4.17]
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135) ~[na:na]
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+		at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2023-07-26 10:58:00.372  INFO 1 --- [freshExecutor-0] d.c.b.a.s.c.d.InstanceDiscoveryListener  : Instance '166ec41df984' missing in DiscoveryClient services and will be removed.
+2023-07-26 10:58:38.772  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 10:58:43.163  INFO 1 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NSI-SERVICE/nsi-service-64bcb421-0adb-47d8-8875-83f19a4b02d9 with status DOWN (replication=true)
+2023-07-26 10:58:48.204  INFO 1 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway-e921ec84-1f9e-4746-a370-5428cdedbda5 with status DOWN (replication=false)
+2023-07-26 10:59:02.152  INFO 1 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway-0070f6e0-e8e5-4aca-a049-d3afeee8e7a8 with status UP (replication=true)
+2023-07-26 10:59:18.309  INFO 1 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/api-gateway-e921ec84-1f9e-4746-a370-5428cdedbda5 with status UP (replication=false)
+2023-07-26 10:59:38.773  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:00:38.772  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:01:38.772  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:02:37.497  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:02:38.772  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:03:38.772  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:03:43.209  INFO 1 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance NSI-SERVICE/nsi-service-64bcb421-0adb-47d8-8875-83f19a4b02d9 with status UP (replication=true)
+2023-07-26 11:04:38.773  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:05:38.773  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:06:38.773  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:07:37.498  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:07:38.074  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 28
+2023-07-26 11:07:38.773  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:08:38.773  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:09:38.773  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:10:38.773  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:11:38.774  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:12:34.050 ERROR 1 --- [cluster.local-7] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.netflix.eureka.cluster.DynamicGZIPContentEncodingFilter.handle(DynamicGZIPContentEncodingFilter.java:48) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.10.17.jar!/:1.10.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.netflix.eureka.transport.JerseyReplicationClient.submitBatchUpdates(JerseyReplicationClient.java:117) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:190) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:961) ~[na:na]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:276) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 10 common frames omitted
+
+2023-07-26 11:12:37.499  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:12:38.773  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:13:38.774  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:14:38.774  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:15:38.774  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:16:38.774  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:17:37.499  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:17:38.774  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:18:38.774  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:19:38.774  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:20:38.775  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:21:25.317 ERROR 1 --- [cluster.local-2] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.netflix.eureka.cluster.DynamicGZIPContentEncodingFilter.handle(DynamicGZIPContentEncodingFilter.java:48) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.10.17.jar!/:1.10.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.netflix.eureka.transport.JerseyReplicationClient.submitBatchUpdates(JerseyReplicationClient.java:117) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:190) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:961) ~[na:na]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:276) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 10 common frames omitted
+
+2023-07-26 11:21:38.775  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:22:37.500  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:22:38.073  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 28
+2023-07-26 11:22:38.775  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:23:38.775  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:24:38.775  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:25:38.776  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:26:38.776  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:27:37.501  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:27:38.776  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:28:38.776  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:29:38.776  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:30:38.777  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2023-07-26 11:31:38.777  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:32:37.502  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:32:38.777  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:33:38.777  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:34:38.777  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:35:38.777  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:36:38.777  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:37:37.503  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:37:38.073  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 28
+2023-07-26 11:37:38.778  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:38:38.799  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 21ms
+2023-07-26 11:39:38.799  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:40:38.799  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:41:38.799  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:42:37.504  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:42:38.800  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:43:38.799  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:44:38.800  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:45:38.800  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:46:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:47:37.505  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:47:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:48:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:49:27.423  INFO 1 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PLANETA-PROCESS/planeta-process-c6db84ea-3d36-4aa5-ac61-280a9edd15cf with status DOWN (replication=false)
+2023-07-26 11:49:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:49:57.463  INFO 1 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PLANETA-PROCESS/planeta-process-c6db84ea-3d36-4aa5-ac61-280a9edd15cf with status UP (replication=false)
+2023-07-26 11:50:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:51:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:52:22.841  INFO 1 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OLAP-SERVICE/olap-service-c4d63787-afb2-42ab-bedc-d1f884dd0f8d with status DOWN (replication=false)
+2023-07-26 11:52:37.505  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:52:38.074  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 30
+2023-07-26 11:52:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:52:52.849  INFO 1 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OLAP-SERVICE/olap-service-c4d63787-afb2-42ab-bedc-d1f884dd0f8d with status UP (replication=false)
+2023-07-26 11:53:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:54:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:55:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:56:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:57:37.506  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 11:57:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:58:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 11:59:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:00:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:01:38.801  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:02:37.507  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:02:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:03:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:04:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:05:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:06:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:07:37.507  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:07:38.073  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 32
+2023-07-26 12:07:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:08:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:09:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:10:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:11:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:12:37.508  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:12:38.802  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:13:38.803  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:14:38.803  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:15:38.804  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:16:38.804  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:17:37.509  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:17:38.804  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:18:38.804  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:19:38.804  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:20:38.804  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:21:38.804  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:22:37.509  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:22:38.074  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 32
+2023-07-26 12:22:38.805  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:23:38.805  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:24:38.806  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:25:38.806  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:26:38.806  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:27:37.510  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:27:38.806  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:28:38.807  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:29:38.807  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:30:38.808  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:30:45.842 ERROR 1 --- [cluster.local-9] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.netflix.eureka.cluster.DynamicGZIPContentEncodingFilter.handle(DynamicGZIPContentEncodingFilter.java:48) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.10.17.jar!/:1.10.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.netflix.eureka.transport.JerseyReplicationClient.submitBatchUpdates(JerseyReplicationClient.java:117) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:190) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:961) ~[na:na]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:276) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 10 common frames omitted
+
+2023-07-26 12:31:38.808  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:32:37.511  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:32:38.808  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:33:38.808  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:34:38.808  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:35:38.809  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:36:38.809  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:37:37.511  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:37:38.074  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 32
+2023-07-26 12:37:38.809  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:38:38.809  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:39:38.810  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:40:38.810  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:41:38.811  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:42:37.512  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:42:38.810  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:43:38.810  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:44:38.810  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:45:38.810  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:46:38.811  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:47:37.512  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:47:38.811  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:48:38.811  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:49:38.811  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:50:38.811  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:51:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:52:37.513  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:52:38.074  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 32
+2023-07-26 12:52:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:53:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:54:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:55:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:56:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:57:37.514  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 12:57:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:58:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 12:59:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:00:38.813  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:01:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:02:37.514  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:02:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:03:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:04:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:05:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:06:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:07:37.515  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:07:38.074  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 32
+2023-07-26 13:07:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:08:38.812  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:09:38.813  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:10:38.813  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:11:38.814  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:12:37.516  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:12:38.814  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:13:38.815  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:14:38.815  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:15:38.815  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:16:38.815  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:17:37.516  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:17:38.815  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:18:38.815  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:19:27.526 ERROR 1 --- [luster.local-18] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.netflix.eureka.cluster.DynamicGZIPContentEncodingFilter.handle(DynamicGZIPContentEncodingFilter.java:48) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.10.17.jar!/:1.10.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.netflix.eureka.transport.JerseyReplicationClient.submitBatchUpdates(JerseyReplicationClient.java:117) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:190) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:961) ~[na:na]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:276) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 10 common frames omitted
+
+2023-07-26 13:19:38.815  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:20:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:21:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:22:37.517  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:22:38.075  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 32
+2023-07-26 13:22:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:23:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:24:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:25:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:26:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:27:37.518  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:27:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:28:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:29:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:30:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:31:38.816  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:32:37.519  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:32:38.817  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:33:38.817  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:34:38.818  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:35:38.818  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:36:38.819  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:37:37.520  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:37:38.076  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 32
+2023-07-26 13:37:38.818  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:38:38.818  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:39:38.819  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:39:58.243 ERROR 1 --- [cluster.local-5] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.netflix.eureka.cluster.DynamicGZIPContentEncodingFilter.handle(DynamicGZIPContentEncodingFilter.java:48) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.10.17.jar!/:1.10.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.netflix.eureka.transport.JerseyReplicationClient.submitBatchUpdates(JerseyReplicationClient.java:117) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:190) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:961) ~[na:na]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:276) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 10 common frames omitted
+
+2023-07-26 13:40:38.819  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:41:38.819  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:42:37.520  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:42:38.820  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:43:38.820  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:44:38.820  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:45:38.820  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:46:38.820  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:47:37.521  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:47:38.821  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:48:38.821  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:49:38.821  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:50:38.821  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:51:38.821  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:52:37.522  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:52:38.075  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 32
+2023-07-26 13:52:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:53:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:54:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:55:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:56:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:57:37.522  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 13:57:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:58:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 13:59:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:00:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:01:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:02:37.523  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 14:02:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:03:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:04:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:05:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:06:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:07:37.523  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 14:07:38.075  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 32
+2023-07-26 14:07:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:08:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:09:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:10:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:11:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:12:37.524  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 14:12:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:13:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:14:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:15:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:16:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:17:37.524  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 14:17:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:18:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:19:38.822  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:20:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:21:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:22:37.525  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 14:22:38.075  INFO 1 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 32
+2023-07-26 14:22:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:23:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:24:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:25:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:26:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:27:37.526  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 14:27:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:28:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:29:38.824  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:30:23.125 ERROR 1 --- [cluster.local-0] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	at com.netflix.eureka.cluster.DynamicGZIPContentEncodingFilter.handle(DynamicGZIPContentEncodingFilter.java:48) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.10.17.jar!/:1.10.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.4.jar!/:1.19.4]
+	at com.netflix.eureka.transport.JerseyReplicationClient.submitBatchUpdates(JerseyReplicationClient.java:117) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:190) ~[eureka-core-1.10.17.jar!/:1.10.17]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:961) ~[na:na]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:276) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.15.jar!/:4.4.15]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.13.jar!/:4.5.13]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar!/:1.19.1]
+	... 10 common frames omitted
+
+2023-07-26 14:30:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:31:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:32:37.526  INFO 1 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-07-26 14:32:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:33:38.823  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-07-26 14:34:38.824  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
